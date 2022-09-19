@@ -10,7 +10,7 @@ declare class RecipientsController {
      *
      * @returns {Promise}
      */
-    static getTransfer(recipientId: string, transferId: string, callback: any): any;
+    static getTransfer(recipientId: string, transferId: string, callback?: any): any;
     /**
      * Updates a recipient
      *
@@ -22,7 +22,7 @@ declare class RecipientsController {
      *
      * @returns {Promise}
      */
-    static updateRecipient(recipientId: string, request: UpdateRecipientRequest, idempotencyKey: string, callback: any): any;
+    static updateRecipient(recipientId: string, request: UpdateRecipientRequest, idempotencyKey: string, callback?: any): any;
     /**
      * Creates an anticipation
      *
@@ -34,7 +34,7 @@ declare class RecipientsController {
      *
      * @returns {Promise}
      */
-    static createAnticipation(recipientId: string, request: CreateAnticipationRequest, idempotencyKey: string, callback: any): any;
+    static createAnticipation(recipientId: string, request: CreateAnticipationRequest, idempotencyKey: string, callback?: any): any;
     /**
      * Gets the anticipation limits for a recipient
      *
@@ -46,7 +46,7 @@ declare class RecipientsController {
      *
      * @returns {Promise}
      */
-    static getAnticipationLimits(recipientId: string, timeframe: string, paymentDate: dateTime, callback: any): any;
+    static getAnticipationLimits(recipientId: string, timeframe: string, paymentDate: dateTime, callback?: any): any;
     /**
      * Retrieves paginated recipients information
      *
@@ -57,7 +57,7 @@ declare class RecipientsController {
      *
      * @returns {Promise}
      */
-    static getRecipients(page: int, size: int, callback: any): any;
+    static getRecipients(page: int, size: int, callback?: any): any;
     /**
      * @todo Add general description for this endpoint
      *
@@ -68,7 +68,7 @@ declare class RecipientsController {
      *
      * @returns {Promise}
      */
-    static getWithdrawById(recipientId: string, withdrawalId: string, callback: any): any;
+    static getWithdrawById(recipientId: string, withdrawalId: string, callback?: any): any;
     /**
      * Updates the default bank account from a recipient
      *
@@ -80,7 +80,7 @@ declare class RecipientsController {
      *
      * @returns {Promise}
      */
-    static updateRecipientDefaultBankAccount(recipientId: string, request: UpdateRecipientBankAccountRequest, idempotencyKey: string, callback: any): any;
+    static updateRecipientDefaultBankAccount(recipientId: string, request: UpdateRecipientBankAccountRequest, idempotencyKey: string, callback?: any): any;
     /**
      * Updates recipient metadata
      *
@@ -92,7 +92,7 @@ declare class RecipientsController {
      *
      * @returns {Promise}
      */
-    static updateRecipientMetadata(recipientId: string, request: UpdateMetadataRequest, idempotencyKey: string, callback: any): any;
+    static updateRecipientMetadata(recipientId: string, request: UpdateMetadataRequest, idempotencyKey: string, callback?: any): any;
     /**
      * Gets a paginated list of transfers for the recipient
      *
@@ -107,7 +107,7 @@ declare class RecipientsController {
      *
      * @returns {Promise}
      */
-    static getTransfers(recipientId: string, page: int, size: int, status: string, createdSince: dateTime, createdUntil: dateTime, callback: any): any;
+    static getTransfers(recipientId: string, page: int, size: int, status: string, createdSince: dateTime, createdUntil: dateTime, callback?: any): any;
     /**
      * @todo Add general description for this endpoint
      *
@@ -118,7 +118,7 @@ declare class RecipientsController {
      *
      * @returns {Promise}
      */
-    static createWithdraw(recipientId: string, request: CreateWithdrawRequest, callback: any): any;
+    static createWithdraw(recipientId: string, request: CreateWithdrawRequest, callback?: any): any;
     /**
      * Updates recipient metadata
      *
@@ -130,7 +130,7 @@ declare class RecipientsController {
      *
      * @returns {Promise}
      */
-    static updateAutomaticAnticipationSettings(recipientId: string, request: UpdateAutomaticAnticipationSettingsRequest, idempotencyKey: string, callback: any): any;
+    static updateAutomaticAnticipationSettings(recipientId: string, request: UpdateAutomaticAnticipationSettingsRequest, idempotencyKey: string, callback?: any): any;
     /**
      * Gets an anticipation
      *
@@ -141,7 +141,7 @@ declare class RecipientsController {
      *
      * @returns {Promise}
      */
-    static getAnticipation(recipientId: string, anticipationId: string, callback: any): any;
+    static getAnticipation(recipientId: string, anticipationId: string, callback?: any): any;
     /**
      * @todo Add general description for this endpoint
      *
@@ -153,7 +153,7 @@ declare class RecipientsController {
      *
      * @returns {Promise}
      */
-    static updateRecipientTransferSettings(recipientId: string, request: UpdateTransferSettingsRequest, idempotencyKey: string, callback: any): any;
+    static updateRecipientTransferSettings(recipientId: string, request: UpdateTransferSettingsRequest, idempotencyKey: string, callback?: any): any;
     /**
      * Retrieves a paginated list of anticipations from a recipient
      *
@@ -175,7 +175,7 @@ declare class RecipientsController {
      *
      * @returns {Promise}
      */
-    static getAnticipations(recipientId: string, page: int, size: int, status: string, timeframe: string, paymentDateSince: dateTime, paymentDateUntil: dateTime, createdSince: dateTime, createdUntil: dateTime, callback: any): any;
+    static getAnticipations(recipientId: string, page: int, size: int, status: string, timeframe: string, paymentDateSince: dateTime, paymentDateUntil: dateTime, createdSince: dateTime, createdUntil: dateTime, callback?: any): any;
     /**
      * Retrieves recipient information
      *
@@ -185,7 +185,7 @@ declare class RecipientsController {
      *
      * @returns {Promise}
      */
-    static getRecipient(recipientId: string, callback: any): any;
+    static getRecipient(recipientId?: string, callback?: any): any;
     /**
      * Gets a paginated list of transfers for the recipient
      *
@@ -200,7 +200,7 @@ declare class RecipientsController {
      *
      * @returns {Promise}
      */
-    static getWithdrawals(recipientId: string, page: int, size: int, status: string, createdSince: dateTime, createdUntil: dateTime, callback: any): any;
+    static getWithdrawals(recipientId: string, page: int, size: int, status: string, createdSince: dateTime, createdUntil: dateTime, callback?: any): any;
     /**
      * Get balance information for a recipient
      *
@@ -210,7 +210,7 @@ declare class RecipientsController {
      *
      * @returns {Promise}
      */
-    static getBalance(recipientId: string, callback: any): any;
+    static getBalance(recipientId?: string, callback?: any): any;
     /**
      * Creates a transfer for a recipient
      *
@@ -222,7 +222,7 @@ declare class RecipientsController {
      *
      * @returns {Promise}
      */
-    static createTransfer(recipientId: string, request: CreateTransferRequest, idempotencyKey: string, callback: any): any;
+    static createTransfer(recipientId: string, request: CreateTransferRequest, idempotencyKey: string, callback?: any): any;
     /**
      * Creates a new recipient
      *
@@ -233,7 +233,7 @@ declare class RecipientsController {
      *
      * @returns {Promise}
      */
-    static createRecipient(request: CreateRecipientRequest, idempotencyKey: string, callback: any): any;
+    static createRecipient(request?: CreateRecipientRequest, idempotencyKey?: string, callback?: any): any;
     /**
      * Retrieves recipient information
      *
@@ -243,7 +243,7 @@ declare class RecipientsController {
      *
      * @returns {Promise}
      */
-    static getRecipientByCode(code: string, callback: any): any;
+    static getRecipientByCode(code?: string, callback?: any): any;
     /**
      * @todo Add general description for this endpoint
      *
@@ -251,6 +251,6 @@ declare class RecipientsController {
      *
      * @returns {Promise}
      */
-    static getDefaultRecipient(callback: any): any;
+    static getDefaultRecipient(callback?: string): any;
 }
 //# sourceMappingURL=RecipientsController.d.ts.map

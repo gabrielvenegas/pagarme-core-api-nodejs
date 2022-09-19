@@ -1,6 +1,6 @@
 {
   "name": "@gabrielvenegaas/pagarmecoreapilib",
-  "version": "5.6.2",
+  "version": "5.6.4",
   "description": "Pagarme API",
   "main": "./lib/index.js",
   "repository": {
@@ -8,7 +8,8 @@
     "url": "git://github.com/gabrielvenegas/pagarme-core-api-nodejs.git"
   },
   "scripts": {
-    "lint": "eslint lib"
+    "lint": "eslint lib",
+    "build": "rimraf ./lib && tsc"
   },
   "author": "APIMATIC SDK Generator",
   "bugs": {
@@ -20,7 +21,10 @@
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.3"
+    "eslint-plugin-react": "^6.10.3",
+    "rimraf": "^3.0.2",
+    "tsc": "^2.0.4",
+    "typescript": "^4.8.3"
   },
   "dependencies": {
     "moment": "^2.17.1",

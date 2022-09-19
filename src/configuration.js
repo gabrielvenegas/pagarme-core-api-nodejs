@@ -6,17 +6,20 @@
 
 "use strict";
 
-let Configuration = {
+var basicAuthUserName = "";
+var basicAuthPassword = "";
+
+var Configuration = {
   // The base Uri for API calls
   BASEURI: "https://api.pagar.me/core/v5",
 
-  // The username to use with basic authentication
-  // TODO: Replace the BasicAuthUserName with an appropriate value
-  basicAuthUserName: "TODO: Replace",
+  // // The username to use with basic authentication
+  // // TODO: Replace the BasicAuthUserName with an appropriate value
+  // basicAuthUserName: "TODO: Replace",
 
-  // The password to use with basic authentication
-  // TODO: Replace the BasicAuthPassword with an appropriate value
-  basicAuthPassword: "TODO: Replace",
+  // // The password to use with basic authentication
+  // // TODO: Replace the BasicAuthPassword with an appropriate value
+  // basicAuthPassword: "TODO: Replace",
 };
 
-module.exports = Configuration;
+module.exports = { ...Configuration, basicAuthUserName, basicAuthPassword };
