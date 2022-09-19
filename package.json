@@ -1,11 +1,11 @@
 {
-  "name": "pagarmecoreapilib",
-  "version": "5.6.0",
+  "name": "@gabrielvenegaas/pagarmecoreapilib",
+  "version": "5.6.1",
   "description": "Pagarme API",
   "main": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/username/repository.git"
+    "url": "git://github.com/gabrielvenegas/pagarme-core-api-nodejs.git"
   },
   "scripts": {
     "lint": "eslint lib"
@@ -42,5 +42,10 @@
       "strict": 0,
       "prefer-rest-params": 0
     }
+  },
+  "homepage": "https://github.com/username/repository#readme",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
   }
 }
