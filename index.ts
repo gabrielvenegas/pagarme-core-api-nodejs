@@ -1,1 +1,2 @@
-export default "./lib";
+export { default } from "./lib";
+export * from "./lib";
