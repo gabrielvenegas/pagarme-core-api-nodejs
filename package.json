@@ -1,6 +1,6 @@
 {
   "name": "@gabrielvenegaas/pagarmecoreapilib",
-  "version": "5.6.5",
+  "version": "5.6.7",
   "description": "Pagarme API",
   "main": "./lib/index.js",
   "repository": {
